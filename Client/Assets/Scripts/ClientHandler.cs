@@ -15,6 +15,7 @@ public class ClientHandler : MonoBehaviour
         ClientSend.WelcomeReceived();
 
         Client.instance.udp.Connect(((IPEndPoint)Client.instance.tcp.socket.Client.LocalEndPoint).Port);
+        //((IPEndPoint)Client.instance.tcp.socket.Client.LocalEndPoint).Port
     }
 
     /*public static void SpawnPlayer(Packet _packet)

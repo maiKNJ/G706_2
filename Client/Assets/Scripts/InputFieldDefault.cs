@@ -10,7 +10,7 @@ public class InputFieldDefault : MonoBehaviour
     void Start()
     {
         inputField = GetComponent<InputField>();
-        inputField.text = "192.168.1.18";
+        inputField.text = "192.168.1.19";
     }
 
     // Update is called once per frame

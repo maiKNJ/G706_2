@@ -49,11 +49,12 @@ public class Client : MonoBehaviour
 
     public void ConnectToServer()
     {
-        instance.ip = UIManager.instance.usernameField.text;
+        //instance.ip = UIManager.instance.usernameField.text;
         InitializeClientData();
 
         isConnected = true;
         tcp.Connect();
+        //udp.Connect(instance.port);
         //Why not udp.Connect()????
     }
 
@@ -67,14 +68,17 @@ public class Client : MonoBehaviour
 
         public void Connect()
         {
+            //instance.ip = UIManager.instance.usernameField.text;
             socket = new TcpClient
             {
                 ReceiveBufferSize = dataBufferSize,
                 SendBufferSize = dataBufferSize
             };
 
+            Debug.Log("socket connect before tcp" + instance.ip);
             receiveBuffer = new byte[dataBufferSize];
             socket.BeginConnect(instance.ip, instance.port, ConnectCallback, socket);
+            Debug.Log("socket connect" + instance.ip);
         }
 
         private void ConnectCallback(IAsyncResult _result)
@@ -190,18 +194,28 @@ public class Client : MonoBehaviour
     {
         public UdpClient socket;
         public IPEndPoint endPoint;
+        public IPAddress address;
 
         public UDP()
         {
-            endPoint = new IPEndPoint(IPAddress.Parse(instance.ip), instance.port);
+            //address = IPAddress.Parse(Client.instance.ip);
+            //endPoint = new IPEndPoint(address, instance.port);
         }
 
         public void Connect(int _localPort)
         {
+            address = IPAddress.Parse(Client.instance.ip);
+            endPoint = new IPEndPoint(address, instance.port);
+            
+            Debug.Log("ip UDP: " + Client.instance.ip);
+            Debug.Log("ip UDP parse" + address);
+
             socket = new UdpClient(_localPort);
+            Debug.Log("Endpoint: " + endPoint);
 
             socket.Connect(endPoint);
             socket.BeginReceive(ReceiveCallback, null);
+            Debug.Log("Endpoint after: " + endPoint);
 
             using (Packet _packet = new Packet())
             {
@@ -228,20 +242,23 @@ public class Client : MonoBehaviour
 
         private void ReceiveCallback(IAsyncResult _result)
         {
+            Debug.Log("inside receiveCallback");
             try
             {
                 byte[] _data = socket.EndReceive(_result, ref endPoint);
+                Debug.Log("data length: " + _data.Length);
                 socket.BeginReceive(ReceiveCallback, null);
 
                 if (_data.Length < 4)
                 {
+                    Debug.Log("if data length: " + _data.Length);
                     instance.Disconnect();
                     return;
                 }
             }
             catch
             {
-
+                Debug.Log("something went wrong");
                 Disconnect();
             }
         }

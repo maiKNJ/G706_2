@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+       
         if (instance == null)
         {
             instance = this;
@@ -48,5 +49,10 @@ public class UIManager : MonoBehaviour
     {
         record.SetActive(true);
         save.SetActive(false);
+    }
+
+    public void ChangeIP(string ip)
+    {
+        Client.instance.ip = ip;
     }
 }

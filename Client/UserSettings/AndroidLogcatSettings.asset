@@ -1,179 +1,53 @@
 {
     "m_SelectedDeviceId": "R5CR10VN1PB",
     "m_SelectedPackage": {
-        "deviceId": "R5CR10VN1PB",
-        "name": "com.DefaultCompany.Client",
-        "processId": 18559,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "R5CR10VN1PB",
+            "name": "com.sec.android.app.launcher",
+            "processId": 2326,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
-            "processId": 20999,
+            "processId": 2556,
             "exited": true
         },
         {
             "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
-            "processId": 22062,
+            "processId": 3413,
             "exited": true
         },
         {
             "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
-            "processId": 31613,
+            "processId": 4506,
             "exited": true
         },
         {
             "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
-            "processId": 31474,
-            "exited": true
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.android.settings",
-            "processId": 11917,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 10486,
+            "processId": 5306,
             "exited": true
         },
         {
             "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
-            "processId": 12988,
-            "exited": false
+            "processId": 6349,
+            "exited": true
         },
         {
             "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
-            "processId": 13314,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 15018,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 25242,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 26542,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 26978,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 27325,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 27919,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 29236,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 29798,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 30144,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 31271,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 31982,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 32153,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 2928,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 3689,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 4292,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 4747,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 6330,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 7985,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 23835,
-            "exited": false
-        },
-        {
-            "deviceId": "R5CR10VN1PB",
-            "name": "com.DefaultCompany.Client",
-            "processId": 18559,
+            "processId": 9090,
             "exited": false
         }
     ],
