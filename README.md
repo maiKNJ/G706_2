@@ -8,6 +8,7 @@ Follow the instructions to use the tracking system.
 There are two parts of the project, the server and the client.
 
 The client ("Client") needs to be opened in Unity and build on an Android device that is compatible with AR Core. This is because it is used through the AR Foundation for the tracking. You can see a list of compatible devices [here](https://developers.google.com/ar/devices). 
+You need to have gradle version 5.6.4 as minimum. And run it with IL2CP if using Android 28 or higher.
 To build the client on the device make sure to choose Android inside the Unity Build Settings (See manual [here](https://docs.unity3d.com/Manual/android-BuildProcess.html))
 
 The server ("CamServer") needs to be build and run on a computer. The computer can furthermore be connected to a projection setup or LED Wall for optimal use.
