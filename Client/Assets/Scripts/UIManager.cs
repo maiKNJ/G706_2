@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    /// <summary>
+    /// This scrips is for the look/interaction of the UI 
+    /// </summary>
+
     public static UIManager instance;
 
     public GameObject startMenu;
@@ -36,7 +40,7 @@ public class UIManager : MonoBehaviour
         ARsession.SetActive(true);
         Client.instance.ConnectToServer();
         record.SetActive(true);
-        //save.SetActive(true);
+      
     }
 
     public void RecordStart()

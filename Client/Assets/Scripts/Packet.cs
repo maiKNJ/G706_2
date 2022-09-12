@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Text;
 using System;
 
+/// In this script is for reading and writing different data types
+
 /// <summary>Sent from server to client.</summary>
 public enum ServerPackets
 {
@@ -31,7 +33,7 @@ public class Packet : IDisposable
     /// <summary>Creates a new empty packet (without an ID).</summary>
     public Packet()
     {
-        buffer = new List<byte>(); // Intitialize buffer
+        buffer = new List<byte>(); // Initialize buffer
         readPos = 0; // Set readPos to 0
     }
 
@@ -39,7 +41,7 @@ public class Packet : IDisposable
     /// <param name="_id">The packet ID.</param>
     public Packet(int _id)
     {
-        buffer = new List<byte>(); // Intitialize buffer
+        buffer = new List<byte>(); // Initialize buffer
         readPos = 0; // Set readPos to 0
 
         Write(_id); // Write packet id to the buffer
@@ -49,7 +51,7 @@ public class Packet : IDisposable
     /// <param name="_data">The bytes to add to the packet.</param>
     public Packet(byte[] _data)
     {
-        buffer = new List<byte>(); // Intitialize buffer
+        buffer = new List<byte>(); // Initialize buffer
         readPos = 0; // Set readPos to 0
 
         SetBytes(_data);

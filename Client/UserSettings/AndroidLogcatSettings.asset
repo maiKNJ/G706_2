@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "R5CR10VN1PB",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R5CR10VN1PB",
+        "name": "com.DefaultCompany.Client",
+        "processId": 9120,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,12 @@
             "deviceId": "R5CR10VN1PB",
             "name": "com.DefaultCompany.Client",
             "processId": 9090,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR10VN1PB",
+            "name": "com.DefaultCompany.Client",
+            "processId": 9120,
             "exited": false
         }
     ],

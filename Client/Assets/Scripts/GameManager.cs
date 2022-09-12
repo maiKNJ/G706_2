@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    /// <summary>
+    /// IS NOT USED!!
+    /// </summary>
     public static GameManager instance;
 
     public static Dictionary<int, PlayerManager> players = new Dictionary<int, PlayerManager>();

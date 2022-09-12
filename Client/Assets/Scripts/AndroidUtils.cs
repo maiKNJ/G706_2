@@ -6,6 +6,9 @@ using UnityEngine.Events;
 // http://developer.android.com/intl/ja/reference/android/Manifest.permission.html
 public enum AndroidPermission
 {
+    /// <summary>
+    /// Might not be needed for screen recording
+    /// </summary>
     ACCESS_COARSE_LOCATION,
     ACCESS_FINE_LOCATION,
     ADD_VOICEMAIL,

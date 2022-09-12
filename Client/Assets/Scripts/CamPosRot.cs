@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CamPosRot : MonoBehaviour
 {
+    /// <summary>
+    /// Used for debugging of changes in the username field
+    /// </summary>
     Client _client;
     UIManager _uimanager;
     // Start is called before the first frame update

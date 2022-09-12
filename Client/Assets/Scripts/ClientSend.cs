@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ClientSend : MonoBehaviour
 {
+    /// <summary>
+    /// Sending data to the server
+    /// </summary>
+    /// <param name="_packet"></param>
     private static void SendTCPData(Packet _packet)
     {
         _packet.WriteLength();
@@ -35,10 +39,7 @@ public class ClientSend : MonoBehaviour
         using (Packet _packet = new Packet((int)ClientPackets.playerMovement))
         {
             _packet.Write(_position);
-            /*foreach (bool _input in _inputs)
-            {
-                _packet.Write(_input);
-            }*/
+            
             _packet.Write(_rotation);
 
             SendUDPData(_packet);

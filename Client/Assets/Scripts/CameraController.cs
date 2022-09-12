@@ -5,6 +5,9 @@ using UnityEngine;
 //Should be put into the server side, and edited to be data coming from ARcore to control the camera
 public class CameraController : MonoBehaviour
 {
+    /// <summary>
+    /// THIS SCRIPT IS NOT USED!! it has only been used for testing the connection
+    /// </summary>
     public PlayerManager player;
     public float sensitivity = 100f;
     public float clampAngle = 85f;

@@ -899,4 +899,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/smile/Desktop/Client_test/Client_try.apk
+  playerPath: C:/Users/smile/Desktop/Client_test/client_try.apk

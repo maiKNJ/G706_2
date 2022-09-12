@@ -7,6 +7,10 @@ using System;
 
 public class Client : MonoBehaviour
 {
+    /// <summary>
+    /// Setting up TCP and UDP. on line 302 and 303 change cam pos
+    /// </summary>
+
     public static Client instance;
     public static int dataBufferSize = 4096;
     //
@@ -294,6 +298,7 @@ public class Client : MonoBehaviour
         {
             {(int)ServerPackets.welcome, ClientHandler.Welcome },
             //{(int)ServerPackets.spawnPlayer, ClientHandler.SpawnPlayer },
+            //Changes this for starting camera in a new spot
             {(int)ServerPackets.playerPosition, ClientHandler.PlayerPosition },
             {(int)ServerPackets.playerRoation, ClientHandler.PlayerRotation },
         };
